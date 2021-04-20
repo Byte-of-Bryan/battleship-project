@@ -162,10 +162,10 @@ def player_turn(sea, valid_guess_count, enemy_ship_row, enemy_ship_col):
             print("Don't blow yourself up now... Try again")
         # prints the player attack if missed
         elif (guess_row != enemy_ship_row or guess_col != enemy_ship_col):
-            print("\n-------You missed my battleship!------")
             sea[guess_row][guess_col] = "X"
-            print("---PLAYER MOVE---")
+            print("\n---PLAYER MOVE---")
             print_sea(sea)
+            print("-------You missed my battleship!------\n")
             valid_player_turn = True
         # player hit enemy ship
         else:
