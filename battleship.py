@@ -214,7 +214,7 @@ def play_battleship(sea, enemy_ship_row, enemy_ship_col):
             break
 
 
-# uses all the above functions to run the battlechip game.
+# uses all the above functions to run the battleship game.
 def main():
     sea = make_sea()
     print_sea(sea)
